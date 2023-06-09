@@ -64,14 +64,14 @@ cells.forEach((cell, index) => {
                 ${display}
                 `;
             status = 'you win';
-        } else if (cells[0].textContent === cells[1].textContent && cells[0].textContent === cells[2].textContent && cells[0].textContent === 'X' // 1st row
-        || cells[0].textContent === cells[4].textContent && cells[0].textContent === cells[8].textContent && cells[0].textContent === 'X' // left diagonal
-        || cells[2].textContent === cells[4].textContent && cells[2].textContent === cells[6].textContent && cells[2].textContent === 'X' // right diagonal
-        || cells[3].textContent === cells[4].textContent && cells[3].textContent === cells[5].textContent && cells[3].textContent === 'X' // 2nd row
-        || cells[6].textContent === cells[7].textContent && cells[6].textContent === cells[8].textContent && cells[6].textContent === 'X' // 3rd row
-        || cells[0].textContent === cells[3].textContent && cells[0].textContent === cells[6].textContent && cells[0].textContent === 'X' // 1st col
-        || cells[1].textContent === cells[4].textContent && cells[1].textContent === cells[7].textContent && cells[1].textContent === 'X' // 2nd col
-        || cells[2].textContent === cells[5].textContent && cells[2].textContent === cells[8].textContent && cells[2].textContent === 'X' // 3rd col) 
+        } else if (cells[0].textContent === cells[1].textContent && cells[0].textContent === cells[2].textContent && cells[0].textContent === 'O' // 1st row
+        || cells[0].textContent === cells[4].textContent && cells[0].textContent === cells[8].textContent && cells[0].textContent === 'O' // left diagonal
+        || cells[2].textContent === cells[4].textContent && cells[2].textContent === cells[6].textContent && cells[2].textContent === 'O' // right diagonal
+        || cells[3].textContent === cells[4].textContent && cells[3].textContent === cells[5].textContent && cells[3].textContent === 'O' // 2nd row
+        || cells[6].textContent === cells[7].textContent && cells[6].textContent === cells[8].textContent && cells[6].textContent === 'O' // 3rd row
+        || cells[0].textContent === cells[3].textContent && cells[0].textContent === cells[6].textContent && cells[0].textContent === 'O' // 1st col
+        || cells[1].textContent === cells[4].textContent && cells[1].textContent === cells[7].textContent && cells[1].textContent === 'O' // 2nd col
+        || cells[2].textContent === cells[5].textContent && cells[2].textContent === cells[8].textContent && cells[2].textContent === 'O' // 3rd col) 
         ) { 
             obj.played += 1;
             obj.lost += 1;
