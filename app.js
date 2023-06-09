@@ -6,12 +6,6 @@ let inGame;
 let newArray = Array.from(cells);
 let status = 'play';
 
-const obj = {
-    played: stats.played,
-    wins: stats.wins,
-    lost: stats.lost,
-}
-
 const statBoard = (arg) => {
     return `
     <div class='stats'>
@@ -23,12 +17,18 @@ const statBoard = (arg) => {
     `;
 }
 
+let obj = {};
+
 if (!stats) {
     obj.played = 0;
     obj.wins = 0;
     obj.lost = 0;
 
     localStorage.setItem('stats', JSON.stringify(obj))
+} else {
+    obj.played = stats.played;
+    obj.wins = stats.wins;
+    obj.lost = stats.lost;
 }
 
 cells.forEach((cell, index) => {
